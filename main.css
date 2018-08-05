@@ -48,8 +48,12 @@ h4 {
     }
 }
 
-.contact {
-  margin-bottom: 6em;
+.header {
+  margin-bottom: 10em;
+}
+
+.title {
+  margin-bottom: 4em;
 }
 
 .websites-line {
