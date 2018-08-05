@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Coiny';
+    src: url('../assets/fonts/Coiny-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

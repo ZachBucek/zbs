@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+
+
+html {
+    background-color: cornsilk;
+}
+
+body {
+    border-bottom: solid 3px blue;
+    border-top: solid 3px blue;
+    margin: 0;
+}
+
+main {
+    text-align: left;
+    margin: 5em 3em 5em 3em;
+}
+
+hr {
+    border-style: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lekton', sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    max-width: 600px;
+}
+
+#contact {
+    margin-bottom: 5em;
+}
+
+.title-line  {
+    color: blue;
+    border-top: solid 1px blue;
+    padding-top: 5px;
+    animation: titleLineAnimation 2000ms;
+}
+
+@keyframes titleLineAnimation {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.projects-line {
+    width: 95px;
+    border-top: dashed 1px black;
+    padding-top: 5px;
+    animation: projectsLineAnimation 2000ms;
+    animation-fill-mode: none;
+}
+
+@keyframes projectsLineAnimation {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 95px;
+    }
+}
