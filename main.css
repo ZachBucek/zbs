@@ -3,11 +3,11 @@
 
 html {
     background-color: cornsilk;
+    font-family: 'Lekton', sans-serif;
+    font-weight: normal;
 }
 
 body {
-    border-bottom: solid 3px blue;
-    border-top: solid 3px blue;
     margin: 0;
 }
 
@@ -25,16 +25,11 @@ a:visited {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lekton', sans-serif;
     font-weight: normal;
 }
 
 h4 {
     max-width: 600px;
-}
-
-#contact {
-    margin-bottom: 5em;
 }
 
 .title-line  {
@@ -53,7 +48,7 @@ h4 {
     }
 }
 
-.projects-line {
+.websites-line {
     width: 95px;
     border-top: dashed 1px black;
     padding-top: 5px;
@@ -68,4 +63,60 @@ h4 {
     to {
         width: 95px;
     }
+}
+
+dl.disclosures button {
+  background-color: white;
+  border-bottom: .5px solid blue;
+  border-right: .5px solid blue;
+  color: blue;
+  cursor: pointer;
+  font-family: Lekton, sans-serif;
+  font-size: 1rem;
+  padding: .5em;
+}
+
+dd {
+  padding: 1em;
+}
+
+.description {
+  background-color: white;
+  max-width: 450px;
+  padding: 1em;
+}
+
+button:active {
+  .arrow {
+    display: none;
+  }
+}
+
+img {
+  -webkit-box-shadow: 5px 5px 5px 3px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    5px 5px 5px 3px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 5px 3px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  margin-bottom: 1em;
+}
+
+@media (min-width:568px) and (max-width: 960px) {
+
+  img {
+    max-width: 600px;
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  img {
+    max-width: 100%;
+  }
+
+  dd {
+    margin: 0;
+    padding: .5em;
+    width: 100%;
+  }
+
 }

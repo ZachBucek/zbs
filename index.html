@@ -6,15 +6,12 @@
     <title>ZBS</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="main.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/apps.js"></script>
-
 </head>
 
 <body>
 
 <main>
-    <div id="contact">
+    
         <h1 class="title-line">ZACH BUCEK STUDIO</h1>
         <h2>// design & development</h2>
         <h3>contact: zbucek@gmail.com</h3>
@@ -22,43 +19,112 @@
 
         <hr>
 
-        <h3>> ABOUT ME</h3>
-        <h4>- I am a web designer and developer. My skills run the gamut from layout and logo design through UI/UX and front-end development. I also do WordPress development, creating custom themes for clients who want something more than what comes out of the box. <br>
-            - With all of my projects, I seek to harness the complexity of information systems to create a lasting connection with the end user. This also means working closely with clients to develop a durable identity and design system.
-        </h4>
-    </div>
-    <div id="projects">
-        <h2 class="projects-line">PROJECTS</h2>
+        <dl class="disclosures">
+          <dt>
+            <button aria-expanded="false" aria-controls="about-description" aria-label="about me"><span class="arrow">></span> About Me</button>
+          </dt>
+          <dd>
+            <div id="about-description" class="description">
+              <p>
+                - I am a web designer and developer. My skills run the gamut from layout and logo design through UI/UX and front-end development. I also do WordPress development, creating custom themes for clients who want something more than what comes out of the box. <br>
+                - With all of my projects, I seek to harness the complexity of information systems to create a lasting connection with the end user. This also means working closely with clients to develop a durable identity and design system. <br>
+                - Below is a picture of my cat Friar Tuck. He is always hungry.
+              </p>
+              <img src="images/FT_web.png" alt="">
+            </div>
+            <!--END DESCRIPTION-->
+          </dd>
+        </dl>
+        <!--END DISCLOSURES-->
 
-        <article class="websites">
-            <h3>> WEBSITES</h3>
-            <h3>>> client work: </h3>
+
+        <h2 class="websites-line">WEBSITES</h2>
+
+          <h3>>> client work: </h3>
+
+          <dl class="disclosures">
+
             <!--RYAN FONTAINE-->
-            <h3><a href="https://ryanfontaine.com/" target="_blank">Ryan Fontaine, Minneapolis MN / 2018</a></h3>
-            <h4>This dynamic and responsive portfolio site is built on a custom WordPress theme implementing CSS Grid.</h4>
-            <!--MCTC ZC-->
-            <h3><a href="https://www.mctclibraryzines.com/" target="_blank">Minneapolis Community & Technical College<br>Library Zine Collection / 2018</a></h3>
-            <h4>- This complete build utilizes a custom WordPress theme. Illustrations, logos, and how-to diagrams were developed as part of a complete identity for MCTC's Library Zine Collection, featuring over 6,000 titles. It is now the exclusive online portal for the collection, allowing users to search the entire database in addition to images and additional content related to featured zines. <br>
-                - The website meets accessibility standards, is fully responsive, and is now dynamically maintained by library staff.</h4>
-            <!--H+N-->
-            <h3><a href="https://hairandnailsart.com" target="_blank">Hair+Nails Gallery, Minneapolis MN / 2017</a></h3>
-            <h4>- This complete build utilizes a custom WordPress theme designed and developed with a complete identity for the gallery, including content-specific logos. This website is fully responsive and allows the gallery owners to dynamically upload content featuring their exhibitions and gallery guides.</h4>
-           
-        </article>
+            <dt>
+              <button aria-expanded="false" aria-controls="rf-description" aria-label="ryan fontaine"><span class="arrow">></span> Ryan Fontaine Portfolio</button>
+            </dt>
+            <dd>
+              <div id="rf-description" class="description">
+                <img src="images/ryan-fontaine/rf-homepage.jpg" alt="ryan fontaine portfolio homepage">
+                <a href="https://ryanfontaine.com/" target="_blank">visit the site</a>
+                <p>This dynamic and responsive portfolio site is built on a custom WordPress theme implementing CSS Grid.</p>
+                <p>Minneapolis, MN 2018</p>
+              </div>
+            </dd>
 
+            <!--MCTC ZC-->
+            <dt>
+              <button aria-expanded="false" aria-controls="zc-description" aria-label="mctc library zine collection"><span class="arrow">></span> MCTC Library Zine Collection</button>
+            </dt>
+            <dd>
+              <div id="zc-description" class="description">
+                <img src="images/mctc-library-zines/mctc-zc-homepage.jpg" alt="mctc zine collection homepage">
+                <a href="https://www.mctclibraryzines.com/" target="_blank">visit the site</a>
+                <p>- This complete build utilizes a custom WordPress theme. Illustrations, logos, and how-to diagrams were developed as part of a complete identity for MCTC's Library Zine Collection, featuring over 6,000 titles. It is now the exclusive online portal for the collection, allowing users to search the entire database in addition to images and additional content related to featured zines. <br>
+                - The website meets accessibility standards, is fully responsive, and is now dynamically maintained by library staff.<p>
+                <p>Minneapolis, MN 2018</p>
+              </div>
+            </dd>
+
+            <!--H+N-->
+            <dt>
+              <button aria-expanded="false" aria-controls="hn-description" aria-label="hair and nails gallery"><span class="arrow">></span> Hair+Nails Gallery</button>
+            </dt>
+            <dd>
+              <div id="hn-description" class="description">
+                <img src="images/hair-and-nails/H+N-homepage.jpg" alt="hair and nails gallery homepage">
+                <a href="https://hairandnailsart.com" target="_blank">visit the site</a>
+                <p>- This complete build utilizes a custom WordPress theme designed and developed with a complete identity for the gallery, including content-specific logos. This website is fully responsive and allows the gallery owners to dynamically upload content featuring their exhibitions and gallery guides.<p>
+                <p>Minneapolis, MN 2017</p>
+              </div>
+            </dd>
+
+          </dl>
+          <!--END DISCLOSURES-->
         <hr>
 
-        <article class="prototypes">
             <h3>>> prototypes: </h3>
-            <!--OP-->
-            <h3><a href="https://zachbucekstudio.com/OLYMPIC_PICTOGRAMS/index.html" target="_blank">Olympic Pictograms</a></h3>
-            <h4>This is a simple image library application that uses JS arrays and for loops with jQuery to display olympic pictograms specific to year or sport. It is fully responsive and features an original logo.</h4>
-            <!--IR-->
-            <h3><a href="https://zachbucekstudio.com/INTERSTELLAR_RECORDS/index.html" target="_blank">Interstellar Records</a></h3>
-            <h4>This is the online presence of an imagined record store, one that pays homage to my favorite independent shops and the wonderful, curated sounds they make available. It is fully responsive and is built on a customized Bootstrap 4 framework. It also features original branding.</h4>
-        </article>
-    </div>
+
+            <dl class="disclosures">
+
+              <!--Olympic Pictograms-->
+              <dt>
+                <button aria-expanded="false" aria-controls="op-description" aria-label="olympic pictograms"><span class="arrow">></span> Olympic Pictograms</button>
+              </dt>
+              <dd>
+                <div id="op-description" class="description">
+                  <img src="images/olympic-pictograms/op-homepage-menu.jpg" alt="olympic pictograms homepage">
+                  <a href="https://zachbucekstudio.com/OLYMPIC_PICTOGRAMS/index.html" target="_blank">visit the site</a>
+                  <p>This is a simple image library application that uses JS arrays and for loops with jQuery to display olympic pictograms specific to year or sport. It is fully responsive and features an original logo.</p>
+                  <p>Minneapolis, MN 2017</p>
+                </div>
+              </dd>
+
+              <!--Interstellar Records-->
+              <dt>
+                <button aria-expanded="false" aria-controls="ir-description" aria-label="interstellar records"><span class="arrow">></span> Interstellar Records</button>
+              </dt>
+              <dd>
+                <div id="ir-description" class="description">
+                  <img src="images/interstellar-records/ir-homepage-top.jpg" alt="interstellar records homepage">
+                  <a href="https://zachbucekstudio.com/INTERSTELLAR_RECORDS/index.html" target="_blank">visit the site</a>
+                  <p>This is the online presence of an imagined record store, one that pays homage to my favorite independent shops and the wonderful, curated sounds they make available. It is fully responsive and is built on a customized Bootstrap 4 framework. It also features original branding.</p>
+                  <p>Minneapolis, MN 2017</p>
+                </div>
+              </dd>
+
+            </dl>
+            <!--END DISCLOSURES-->
+
 </main>
 
 </body>
+
+<script src="js/disclosure.js"></script>
+
 </html>
