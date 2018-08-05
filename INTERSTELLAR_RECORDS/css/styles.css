@@ -1,0 +1,658 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../assets/images/starry_sky_optimized.jpg);
+    background-size: cover;
+    margin: 0; padding: 0;
+}
+
+/* DIVIDER */
+hr.divider {
+    border-top: 1px solid #ff6633;
+}
+
+
+/**/
+/* NAVIGATION */
+/**/
+
+/* MAIN NAV */
+#main_nav_wrapper {
+    padding-top: 15px;
+}
+.main_nav {
+    margin-bottom: 90px;
+}
+.main_nav .icons {
+    position: absolute;
+}
+.main_nav .fa-map-marker {
+    top: .5em;
+    left: 3.5em;
+}
+.main_nav p#map_marker {
+    position: absolute;
+    color: yellow;
+    top: 3em;
+    left: 3.5em;
+    font-family: 'Coiny', sans-serif;
+}
+.main_nav .fa-headphones {
+    top: .5em;
+    right: 4.5em;
+}
+.main_nav .fa-search {
+    top: .5em;
+    right: 3em;
+}
+.main_nav .fa-shopping-cart {
+    top: .5em;
+    right: 1.5em;
+}
+.main_nav img {
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.main_nav hr {
+    max-width: 550px;
+    border-top: 1px solid #ff6633;
+}
+.main_nav ul {
+    list-style: none;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_nav ul li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.15rem;
+}
+.main_nav ul li a,
+.main_nav ul li {
+    text-decoration: none;
+    font-family: 'Coiny', sans-serif;
+    color: #33ffcc;
+}
+.main_nav ul li a:hover {
+    color: white;
+}
+
+
+/* MOBILE MAIN NAV */
+#mobile-main_nav_wrapper {
+    display: none;
+}
+
+
+/* NAV ON SCROLL */
+.navbar {
+    display:none;
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    z-index: 100;
+    top: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar .icons {
+    position: fixed;
+    overflow: auto;
+}
+.navbar .fa-map-marker {
+    top: .25em;
+    left: 3em;
+}
+.navbar p#map_marker_scroll {
+    position: absolute;
+    color: yellow;
+    top: 2.75em;
+    left: 2.75em;
+    font-family: 'Coiny', sans-serif;
+}
+.navbar .fa-headphones {
+    top: .5em;
+    right: 4em;
+}
+.navbar .fa-search {
+    top: .5em;
+    right: 2.5em;
+}
+.navbar .fa-shopping-cart {
+    top: .5em;
+    right: 1em;
+}
+.navbar-brand {
+    font-family: 'Coiny', sans-serif;
+    color: yellow;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+a.navbar-brand:hover {
+    background-color: yellow;
+}
+.navbar-light .navbar-brand {
+    color: yellow;
+    border-bottom: 1px solid #ff6633;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #33ffcc;
+    font-family: 'Coiny', sans-serif;
+    font-size: 1.25rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+div#navbarSupportedContent.collapse.navbar-collapse {
+    width: 500px;
+    margin: 0 auto;
+}
+.navbar-toggler {
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+
+/* DISABLED LINKS */
+.main_nav a.disabled:hover,
+.mobile-main_nav a.disabled:hover,
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: #33ffcc;
+}
+
+
+/**/
+/* FOOTER */
+/**/
+footer hr {
+    border-top: 1px solid #ff6633;
+    width: 100%;
+}
+footer #address {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+footer #address p {
+    font-family: 'Coiny', sans-serif;
+    font-size: 21px;
+    color: yellow;
+}
+footer #hours {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+footer #hours p {
+    font-family: 'Coiny', sans-serif;
+    font-size: 21px;
+    color: yellow;
+}
+img#logo_footer {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+    padding: 40px 0 30px 0;
+}
+#social_icons_container {
+    display: block;
+    margin: 0 auto;
+    max-width: 260px;
+    padding-top: 50px;
+}
+.social_icons {
+    padding: 0 .25em .5em .25em;
+}
+p#copyright {
+    font-family: 'Roboto', sans-serif;
+    color: #33ffcc;
+    font-size: .75em;
+}
+
+/**/
+/* HOMEPAGE */
+/**/
+
+/* HOMEPAGE SLIDER */
+div.carousel {
+    margin-bottom: 90px;
+}
+
+/* STAFF PICKS */
+div.container.album_picks {
+    padding-bottom: 90px;
+}
+.container .album_picks {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.album_picks h1 {
+    font-family: 'Coiny', sans-serif;
+    color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.album_picks img {
+    max-width: 100%;
+    margin-top: 30px;
+    border: 1px solid #33ffcc;
+}
+.album_picks img:hover {
+    transform: scale(1.1);
+}
+
+/* LABELS */
+.labels img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.labels h1 {
+    font-family: 'Coiny', sans-serif;
+    color: yellow;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.carousel-inner h1{
+    font-family: 'Coiny', sans-serif;
+    color: #33ffcc;
+    transform: rotate(-15deg);
+    margin-bottom: 200px;
+    font-size: 36px;
+}
+h1#mexican_summer, h1#numero {
+    text-align: left;
+}
+h1#domino {
+    text-align: right;
+}
+h1#numero {
+    color: black;
+}
+.carousel-inner a {
+    color: #33ffcc;
+    text-decoration: none;
+}
+
+/**/
+/* CARDS - STYLES APPLIED TO ALL */
+/**/
+.card p {
+    font-size: 1.5rem;
+}
+
+/**/
+/* ABOUT */
+/**/
+.card.about {
+    margin-bottom: 60px;
+}
+.about .card-title {
+    font-family: 'Coiny', sans-serif;
+}
+.about .card-body {
+    padding: 1.25rem 3rem 1.25rem 1.25rem;
+}
+.about .btn {
+    font-family: 'Coiny', sans-serif;
+    color: white;
+    background-color: #ff6633;
+}
+.about .badge a {
+    color: yellow;
+}
+.about .badge a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/**/
+/* DIG */
+/**/
+div.container.dig-albums {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.card.dig {
+    margin-bottom: 30px;
+    background-color: black;
+    border: 1px solid #ff6633;
+}
+.dig .card-title {
+    font-family: 'Coiny', sans-serif;
+    color: white;
+}
+.dig p {
+    color: white;
+    font-size: 1.25rem;
+}
+.dig .btn {
+    font-family: 'Roboto', sans-serif;
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+}
+.dig .badge a {
+    color: lightgrey;
+    text-decoration: none;
+}
+/* MODALS */
+.dig-albums .modal-header {
+    background-color: #33ffcc;
+}
+.dig-albums .modal-header h5 {
+    font-family: 'Coiny', sans-serif;
+}
+.dig-albums .modal-body {
+    background-color: black;
+}
+.dig-albums .modal-footer {
+    background-color: #ff6633;
+}
+.dig-albums .modal-footer .btn {
+    background-color: yellow;
+    color: black;
+}
+
+
+/**/
+/* DIG ITEM */
+/**/
+.card.dig-item {
+    margin-bottom: 60px;
+    background-color: black;
+    border: 1px solid #ff6633;
+}
+.card.dig-item img {
+    border: 1px solid #33ffcc;
+}
+.dig-item .card-title {
+    font-family: 'Coiny', sans-serif;
+    color: white;
+}
+.dig-item {
+    color: #33ffcc;
+}
+.dig-item p {
+    color: white;
+    font-size: 1.25rem;
+}
+.dig-item .btn {
+    font-family: 'Coiny', sans-serif;
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+}
+.dig-item .badge {
+    color: #ff6633;
+    text-decoration: none;
+    border: 1px solid #ff6633;
+    font-size: 1.25rem;
+}
+
+/**/
+/* LABELS */
+/**/
+div.labels_page {
+    padding-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+}
+.labels_page .media {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ff6633;
+}
+.labels_page .media-body h3 {
+    font-family: 'Coiny', sans-serif;
+    color: yellow;
+}
+.labels_page .media-body p {
+    font-size: 1.5rem;
+    color: white;
+}
+.labels_page .media-body li, .labels_page .media-body li a {
+    font-size: 1.25rem;
+    color: #33ffcc;
+}
+.labels_page .media-body li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/**/
+/* DEALS */
+/**/
+.deals h1 {
+    font-family: 'Coiny', sans-serif;
+    color: white;
+}
+.deals h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+.deals p {
+    font-size: 2rem;
+    color: white;
+}
+
+/**/
+/* MEDIA BREAKPOINTS */
+/**/
+
+@media (max-width: 995px) {
+
+    /**/
+    /* NAVIGATION */
+    /**/
+
+    /* MAIN NAV */
+    /* ICONS */
+    /* MAP MARKER */
+    .main_nav p#map_marker {
+        display: none;
+    }
+    .main_nav .fa-map-marker {
+        top: .25em;
+        left: .25em;
+    }
+
+    /* HEADPHONES, SEARCH, CART */
+    .main_nav .fa-headphones {
+        top: .15em;
+        right: 3.25em;
+    }
+    .main_nav .fa-search {
+        top: .15em;
+        right: 1.75em;
+    }
+    .main_nav .fa-shopping-cart {
+        top: .15em;
+        right: .25em;
+    }
+
+    /* SCROLL NAV */
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #33ffcc;
+        font-family: 'Coiny', sans-serif;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ff6633;
+    }
+    .navbar .fa-map-marker {
+        top: .25em;
+        left: .25em;
+    }
+    .navbar p#map_marker_scroll {
+        display: none;
+    }
+    .navbar .fa-headphones {
+        top: .25em;
+        right: 3em;
+    }
+    .navbar .fa-search {
+        top: .25em;
+        right: 1.5em;
+    }
+    .navbar .fa-shopping-cart {
+        top: .25em;
+        right: .25em;
+    }
+    .navbar-light .navbar-brand {
+        border: none;
+    }
+
+
+}
+/* END BREAKPOINT FOR 995px */
+
+
+@media (max-width: 770px) {
+    /**/
+    /* DIG ITEM */
+    /**/
+    .card.dig-item {
+        border: none;
+    }
+}
+/* END BREAKPOINT FOR 770px */
+
+
+@media (max-width: 600px) {
+
+    /**/
+    /* NAVIGATION */
+    /**/
+
+    /* MAIN NAV */
+    #main_nav_wrapper {
+        display: none;
+    }
+
+    /* MOBILE MAIN NAV */
+    #mobile-main_nav_wrapper {
+        padding-top: 15px;
+        display: block;
+    }
+    .mobile-main_nav {
+        margin-bottom: 90px;
+    }
+    .mobile-main_nav .icons {
+        position: absolute;
+    }
+    .mobile-main_nav .fa-map-marker {
+        top: .25em;
+        left: .25em;
+    }
+    .mobile-main_nav .fa-headphones {
+        top: .25em;
+        right: 3.25em;
+    }
+    .mobile-main_nav .fa-search {
+        top: .25em;
+        right: 1.75em;
+    }
+    .mobile-main_nav .fa-shopping-cart {
+        top: .25em;
+        right: .25em;
+    }
+    .mobile-main_nav img {
+        display: block;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .mobile-main_nav hr {
+        max-width: 515px;
+        border-top: 1px solid #ff6633;
+    }
+    .mobile-main_nav ul {
+        width: 100%;
+        list-style: none;
+        background-color: black;
+    }
+    .mobile-main_nav ul li {
+        padding: 10px 0 10px 60px;
+        border-bottom: 1px solid #ff6633;
+    }
+    .mobile-main_nav ul li a {
+        text-decoration: none;
+        font-family: 'Coiny', sans-serif;
+        color: #33ffcb;
+        font-size: 1.5rem;
+    }
+    .mobile-main_nav ul li a:hover {
+        color: white;
+    }
+    .mobile-main_nav .dropdown {
+        padding-left: 30px;
+    }
+    .mobile-main_nav .dropdown-menu,
+    .mobile-main_nav .btn {
+        background-color: black;
+    }
+
+    /* NAV ON SCROLL */
+    .navbar {
+        text-align: left;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-toggler {
+        padding: 0;
+    }
+    .navbar .fa-map-marker,
+    .navbar .fa-headphones,
+    .navbar .fa-search,
+    .navbar .fa-shopping-cart {
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 60px;
+    }
+
+    /**/
+    /* CAROUSEL */
+    /**/
+    div.carousel.slide.hero {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
